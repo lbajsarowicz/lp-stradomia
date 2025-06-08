@@ -1,6 +1,7 @@
 {
   "name": "lp-stradomia",
-  "description": "Build a personal website, blog, or portfolio with Astro.",
+  "type": "module",
+  "version": "0.0.1",
   "cloudflare": {
     "label": "Astro Framework Starter",
     "products": [
@@ -13,17 +14,6 @@
     "preview_image_url": "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/33bbbf02-eda2-4d3f-b244-c27a280f3900/public",
     "publish": true
   },
-  "dependencies": {
-    "@astrojs/cloudflare": "12.5.0",
-    "@astrojs/mdx": "4.2.4",
-    "@astrojs/rss": "4.0.11",
-    "@astrojs/sitemap": "3.3.0",
-    "astro": "5.7.4",
-    "typescript": "5.8.3"
-  },
-  "devDependencies": {
-    "wrangler": "4.16.1"
-  },
   "scripts": {
     "astro": "astro",
     "build": "astro build",
@@ -33,5 +23,27 @@
     "dev": "astro dev",
     "preview": "astro build && wrangler dev"
   },
-  "type": "module"
+  "dependencies": {
+    "@astrojs/check": "^0.4.1",
+    "@astrojs/cloudflare": "12.5.0",
+    "@astrojs/mdx": "4.2.4",
+    "@astrojs/rss": "4.0.11",
+    "@astrojs/react": "^3.0.10",
+    "@astrojs/sitemap": "3.3.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "astro": "5.7.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.8.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.4",
+    "prettier-plugin-astro": "^0.13.0"
+  },
+  "volta": {
+    "node": "20.11.0"
+  }
 }
